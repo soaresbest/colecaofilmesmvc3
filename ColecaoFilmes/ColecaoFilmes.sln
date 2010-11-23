@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visualizacao", "Visualizacao\Visualizacao.csproj", "{A3E9CEE1-FDF7-43E9-818F-CD5D8A6E089F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{50AEC1AB-D671-4446-91E3-39778060E6F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infraestrutura", "Infraestrutura\Infraestrutura.csproj", "{0CDA4D30-95E3-471D-9CB0-7418013D6ADA}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs07
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Visualizacao\\Visualizacao.csproj
+		SccProjectName1 = Visualizacao
+		SccLocalPath1 = Visualizacao
+		SccProjectUniqueName2 = Dominio\\Dominio.csproj
+		SccProjectName2 = Dominio
+		SccLocalPath2 = Dominio
+		SccProjectUniqueName3 = Infraestrutura\\Infraestrutura.csproj
+		SccProjectName3 = Infraestrutura
+		SccLocalPath3 = Infraestrutura
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3E9CEE1-FDF7-43E9-818F-CD5D8A6E089F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3E9CEE1-FDF7-43E9-818F-CD5D8A6E089F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3E9CEE1-FDF7-43E9-818F-CD5D8A6E089F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3E9CEE1-FDF7-43E9-818F-CD5D8A6E089F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50AEC1AB-D671-4446-91E3-39778060E6F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50AEC1AB-D671-4446-91E3-39778060E6F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50AEC1AB-D671-4446-91E3-39778060E6F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50AEC1AB-D671-4446-91E3-39778060E6F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CDA4D30-95E3-471D-9CB0-7418013D6ADA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CDA4D30-95E3-471D-9CB0-7418013D6ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CDA4D30-95E3-471D-9CB0-7418013D6ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CDA4D30-95E3-471D-9CB0-7418013D6ADA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
