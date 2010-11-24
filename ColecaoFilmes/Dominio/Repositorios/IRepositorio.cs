@@ -4,11 +4,10 @@ namespace ColecaoFilmes.Dominio.Repositorios
 {
     public interface IRepositorio
     {
-        void Incluir(object entidade);
-        void Alterar(object entidade);
+        void Salvar(object entidade);
         T Pesquisar<T>(int id);
-        void Excluir<T>(T entidade);
-        void Excluir(int id);
+        void Excluir(object entidade);
+        void Excluir<T>(int id);
         IList<T> PesquisarTudo<T>();
     }
 }

@@ -14,7 +14,7 @@ namespace ColecaoFilmes.Dominio.Servicos
         }
         public void IncluirFilme(Filme filme)
         {
-            _repositorio.Incluir(filme);
+            _repositorio.Salvar(filme);
         }
     }
 }

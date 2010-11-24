@@ -1,44 +1,54 @@
 using System;
 using System.Collections.Generic;
 using ColecaoFilmes.Dominio.Repositorios;
+using NHibernate;
 
-namespace ColecaoFilmes.Infraestrutura.DataAccess.DAOs
+namespace ColecaoFilmes.Infraestrutura.AcessoDados.DAOs
 {
     public class DAOGenerico : IRepositorio
     {
-        public void Incluir(object entidade)
+        private SessionProvider _sessionProvider;
+
+        protected ISession Session
         {
-            throw new NotImplementedException();
+            get
+            {
+                return _sessionProvider.GetCurrentSession();
+            }
         }
 
-        public void Alterar(object entidade)
-        {
-            throw new NotImplementedException();
-        }
 
-        public IList<T> PesquisarLista<T>(T entidade)
+        public DAOGenerico(SessionProvider sessionProvider)
         {
-            throw new NotImplementedException();
+            _sessionProvider = sessionProvider;
+        }
+        
+        public void Salvar(object entidade)
+        {
+            Session.SaveOrUpdate(entidade);
         }
 
         public T Pesquisar<T>(int id)
         {
-            throw new NotImplementedException();
+            return Session.Load<T>(id);
         }
 
-        public void Excluir<T>(T entidade)
+        public void Excluir(object entidade)
         {
-            throw new NotImplementedException();
+            Session.Delete(entidade);
         }
 
-        public void Excluir(int id)
+        public void Excluir<T>(int id)
         {
-            throw new NotImplementedException();
+            var entidade = Pesquisar<T>(id);
+            Excluir(entidade);
         }
 
         public IList<T> PesquisarTudo<T>()
         {
-            throw new NotImplementedException();
+            var criteria = Session.CreateCriteria(typeof(T));
+            return criteria.List<T>();
+
         }
     }
 }

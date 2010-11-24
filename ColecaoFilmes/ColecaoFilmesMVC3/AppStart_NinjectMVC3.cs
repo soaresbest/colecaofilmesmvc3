@@ -3,7 +3,7 @@ using ColecaoFilmes.Dominio.Repositorios;
 using ColecaoFilmes.Dominio.Servicos;
 using ColecaoFilmes.Infraestrutura;
 using ColecaoFilmes.Infraestrutura.AcessoDados;
-using ColecaoFilmes.Infraestrutura.DataAccess.DAOs;
+using ColecaoFilmes.Infraestrutura.AcessoDados.DAOs;
 using Ninject;
 using Ninject.Mvc3;
 

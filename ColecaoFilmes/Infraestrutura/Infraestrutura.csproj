@@ -77,16 +77,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AcessoDados\CascadeConvention.cs" />
-    <Compile Include="AcessoDados\EnumConvention.cs" />
+    <Compile Include="AcessoDados\Convencoes\CascadeConvention.cs" />
+    <Compile Include="AcessoDados\Convencoes\EnumConvention.cs" />
     <Compile Include="AcessoDados\Mapeamentos\FilmesMap.cs" />
-    <Compile Include="AcessoDados\IDAHelper.cs" />
     <Compile Include="AcessoDados\DAOs\DAOFilme.cs" />
     <Compile Include="AcessoDados\DAOs\DAOGenerico.cs" />
     <Compile Include="AcessoDados\SessionFactoryProvider.cs" />
     <Compile Include="AcessoDados\Mapeamentos\ReleasesMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SessionProvider.cs" />
+    <Compile Include="AcessoDados\SessionProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Dominio\Dominio.csproj">
