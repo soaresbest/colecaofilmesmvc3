@@ -15,7 +15,7 @@ namespace ColecaoFilmesMVC3 {
             //kernel.Bind<IThingRepository>().To<SqlThingRepository>();
             kernel.Bind<SessionFactoryProvider>().ToSelf().InSingletonScope();
             kernel.Bind<SessionProvider>().ToSelf().InRequestScope();
-            kernel.Bind<IFilmesRepositorio>().To<DAOFilme>().InRequestScope();
+            kernel.Bind<IFilmesRepositorio>().To<DAOFilme>();
             kernel.Bind<IServicoFilme>().To<ServicoFilme>();
         }
 

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using ColecaoFilmes.Dominio.Entidades;
 using ColecaoFilmes.Dominio.Repositorios;
 
@@ -15,6 +16,11 @@ namespace ColecaoFilmes.Dominio.Servicos
         public void IncluirFilme(Filme filme)
         {
             _repositorio.Salvar(filme);
+        }
+
+        public IList<Filme> RecuperarTodosFilmes()
+        {
+            return _repositorio.PesquisarTudo<Filme>();
         }
     }
 }
