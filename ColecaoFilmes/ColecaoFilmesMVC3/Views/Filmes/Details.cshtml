@@ -1,0 +1,22 @@
+﻿@model ColecaoFilmes.Dominio.Entidades.Filme
+
+@{
+    View.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Fields</legend>
+
+    <div class="display-label">NomeOriginal</div>
+    <div class="display-field">@Model.NomeOriginal</div>
+
+    <div class="display-label">ImdbId</div>
+    <div class="display-field">@Model.ImdbId</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

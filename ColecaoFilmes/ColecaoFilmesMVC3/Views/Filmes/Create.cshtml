@@ -1,0 +1,40 @@
+﻿@model ColecaoFilmes.Dominio.Entidades.Filme
+
+@{
+    View.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Fields</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NomeOriginal)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NomeOriginal)
+            @Html.ValidationMessageFor(model => model.NomeOriginal)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ImdbId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ImdbId)
+            @Html.ValidationMessageFor(model => model.ImdbId)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
