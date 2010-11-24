@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ColecaoFilmes.Dominio.Entidades;
 using ColecaoFilmes.Dominio.Servicos;
 
 namespace ColecaoFilmesMVC3.Controllers
@@ -20,7 +21,8 @@ namespace ColecaoFilmesMVC3.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            var filmes = _servico.RecuperarTodosFilmes();
+            return View(filmes);
         }
 
         //
@@ -43,11 +45,11 @@ namespace ColecaoFilmesMVC3.Controllers
         // POST: /Filmes/Create
 
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Filme filme )
         {
             try
             {
-                // TODO: Add insert logic here
+                _servico.IncluirFilme(filme);
 
                 return RedirectToAction("Index");
             }

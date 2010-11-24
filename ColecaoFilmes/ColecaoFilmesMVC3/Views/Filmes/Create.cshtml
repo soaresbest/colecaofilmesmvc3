@@ -7,6 +7,7 @@
 
 <h2>Create</h2>
 
+
 @using (Html.BeginForm()) {
     @Html.ValidationSummary(true)
     <fieldset>
@@ -27,9 +28,8 @@
             @Html.EditorFor(model => model.ImdbId)
             @Html.ValidationMessageFor(model => model.ImdbId)
         </div>
-
         <p>
-            <input type="submit" value="Create" />
+            <input type="submit" value="Salvar" />
         </p>
     </fieldset>
 }
