@@ -23,8 +23,6 @@ namespace ColecaoFilmes.Infraestrutura.AcessoDados
                 );
 
             _sessionFactory = cfg.BuildSessionFactory();
-            //BuildSchema(cfg);
-
             return _sessionFactory;
         }
 
