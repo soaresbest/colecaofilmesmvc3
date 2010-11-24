@@ -115,6 +115,10 @@
       <Project>{50AEC1AB-D671-4446-91E3-39778060E6F3}</Project>
       <Name>Dominio</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Infraestrutura\Infraestrutura.csproj">
+      <Project>{0CDA4D30-95E3-471D-9CB0-7418013D6ADA}</Project>
+      <Name>Infraestrutura</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Filmes\Index.cshtml" />
