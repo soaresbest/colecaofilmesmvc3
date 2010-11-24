@@ -77,9 +77,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataAccess\DAOs\DAOFilme.cs" />
-    <Compile Include="DataAccess\DAOs\DAOGenerico.cs" />
-    <Compile Include="DataAccess\NHibernateHelper.cs" />
+    <Compile Include="AcessoDados\DAOs\DAOFilme.cs" />
+    <Compile Include="AcessoDados\DAOs\DAOGenerico.cs" />
+    <Compile Include="AcessoDados\NHibernateHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
