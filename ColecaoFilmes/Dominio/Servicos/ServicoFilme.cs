@@ -18,9 +18,24 @@ namespace ColecaoFilmes.Dominio.Servicos
             _repositorio.Salvar(filme);
         }
 
+        public void AlterarFilme(Filme filme)
+        {
+            _repositorio.Alterar(filme);
+        }
+
+        public void ExcluirFilme(Filme filme)
+        {
+            _repositorio.Excluir(filme);
+        }
+
         public IList<Filme> RecuperarTodosFilmes()
         {
             return _repositorio.PesquisarTudo<Filme>();
+        }
+
+        public Filme RecuperarFilme(int id)
+        {
+            return _repositorio.RecuperarFilme(id);
         }
     }
 }

@@ -64,19 +64,19 @@ namespace ColecaoFilmesMVC3.Controllers
  
         public ActionResult Edit(int id)
         {
-            return View();
+            var filme = _servico.RecuperarFilme(id);
+            return View(filme);
         }
 
         //
         // POST: /Filmes/Edit/5
 
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(Filme filme)
         {
             try
             {
-                // TODO: Add update logic here
- 
+                _servico.AlterarFilme(filme);
                 return RedirectToAction("Index");
             }
             catch
@@ -90,19 +90,19 @@ namespace ColecaoFilmesMVC3.Controllers
  
         public ActionResult Delete(int id)
         {
-            return View();
+            var filme = _servico.RecuperarFilme(id);
+            return View(filme);
         }
 
         //
         // POST: /Filmes/Delete/5
 
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(Filme filme)
         {
             try
             {
-                // TODO: Add delete logic here
- 
+                _servico.ExcluirFilme(filme);
                 return RedirectToAction("Index");
             }
             catch

@@ -10,5 +10,6 @@ namespace ColecaoFilmes.Dominio.Repositorios
     public interface IFilmesRepositorio : IRepositorio
     {
         Filme PesquisarPorNome(Filme filme);
+        Filme RecuperarFilme(int id);
     }
 }

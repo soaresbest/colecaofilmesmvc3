@@ -25,7 +25,13 @@ namespace ColecaoFilmes.Infraestrutura.AcessoDados.DAOs
         
         public void Salvar(object entidade)
         {
-            Session.SaveOrUpdate(entidade);
+            Session.Save(entidade);
+        }
+
+        public void Alterar(object entidade)
+        {
+            Session.Update(entidade);
+            Session.Flush();
         }
 
         public T Pesquisar<T>(int id)
@@ -36,6 +42,7 @@ namespace ColecaoFilmes.Infraestrutura.AcessoDados.DAOs
         public void Excluir(object entidade)
         {
             Session.Delete(entidade);
+            Session.Flush();
         }
 
         public void Excluir<T>(int id)

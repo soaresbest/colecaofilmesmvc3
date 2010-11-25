@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace ColecaoFilmes.Dominio.Entidades
 {
-    public class Filme : IEntidade
+    public class Filme
     {
         public virtual string NomeOriginal { get; set; }
 
@@ -12,7 +12,7 @@ namespace ColecaoFilmes.Dominio.Entidades
 
         #region IEntidade Members
 
-        public virtual int Id { get; private set; }
+        public virtual int Id { get; set; }
 
         #endregion
 

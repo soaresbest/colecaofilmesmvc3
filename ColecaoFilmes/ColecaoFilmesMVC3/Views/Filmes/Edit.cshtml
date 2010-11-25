@@ -7,18 +7,19 @@
 
 <h2>Edit</h2>
 
-@using (Html.BeginForm()) {
-    @Html.ValidationSummary(true)
+@using (Html.BeginForm()) {    
     <fieldset>
         <legend>Fields</legend>
 
         <div class="editor-label">
+            
             @Html.LabelFor(model => model.NomeOriginal)
         </div>
         <div class="editor-field">
+            @Html.HiddenFor(model => model.Id)
             @Html.EditorFor(model => model.NomeOriginal)
-            @Html.ValidationMessageFor(model => model.NomeOriginal)
-        </div>
+            @Html.ValidationMessageFor(model => model.NomeOriginal)            
+        </div>5
 
         <div class="editor-label">
             @Html.LabelFor(model => model.ImdbId)
@@ -28,7 +29,7 @@
             @Html.ValidationMessageFor(model => model.ImdbId)
         </div>
 
-        @Html.HiddenFor(model => model.Id)
+       
 
         <p>
             <input type="submit" value="Save" />
