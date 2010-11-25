@@ -1,0 +1,4 @@
+PoC demonstrando boas práticas usando NHibernate, ASP.NET MVC 3 e Ninject.
+
+Ainda não utilizamos TDD nas funcionalidades anteriores.
+Logo após escrever testes para cobrir as funcionalidades já existentes, a idéia é aplicar TDD.
