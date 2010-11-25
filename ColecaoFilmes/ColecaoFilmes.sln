@@ -8,21 +8,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColecaoFilmesMVC3", "ColecaoFilmesMVC3\ColecaoFilmesMVC3.csproj", "{19195FB9-2ADC-4252-B24F-1ECC02254042}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 4
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs07
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Dominio\\Dominio.csproj
-		SccProjectName1 = Dominio
-		SccLocalPath1 = Dominio
-		SccProjectUniqueName2 = Infraestrutura\\Infraestrutura.csproj
-		SccProjectName2 = Infraestrutura
-		SccLocalPath2 = Infraestrutura
-		SccProjectUniqueName3 = ColecaoFilmesMVC3\\ColecaoFilmesMVC3.csproj
-		SccProjectName3 = ColecaoFilmesMVC3
-		SccLocalPath3 = ColecaoFilmesMVC3
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
