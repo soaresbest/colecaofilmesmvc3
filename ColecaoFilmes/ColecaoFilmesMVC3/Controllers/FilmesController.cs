@@ -30,7 +30,8 @@ namespace ColecaoFilmesMVC3.Controllers
 
         public ActionResult Details(int id)
         {
-            return View();
+            var filme = _servico.RecuperarFilme(id);
+            return View(filme);
         }
 
         //
