@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infraestrutura", "Infraestr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColecaoFilmesMVC3", "ColecaoFilmesMVC3\ColecaoFilmesMVC3.csproj", "{19195FB9-2ADC-4252-B24F-1ECC02254042}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio.Testes", "Dominio.Testes\Dominio.Testes.csproj", "{577F3995-8EC4-488D-A5DB-BD60B50C2953}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{19195FB9-2ADC-4252-B24F-1ECC02254042}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19195FB9-2ADC-4252-B24F-1ECC02254042}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19195FB9-2ADC-4252-B24F-1ECC02254042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{577F3995-8EC4-488D-A5DB-BD60B50C2953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{577F3995-8EC4-488D-A5DB-BD60B50C2953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{577F3995-8EC4-488D-A5DB-BD60B50C2953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{577F3995-8EC4-488D-A5DB-BD60B50C2953}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
